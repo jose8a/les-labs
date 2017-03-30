@@ -1,0 +1,8 @@
+## `common_subsets`
+Write a function that takes two arrays (`arr1` and `arr2`) of integers
+and returns an array with all the subsets commmon to both.
+
+Don't generate all subsets of `arr1` and `arr2`, which would take time
+exponential in the size of `arr1`/`arr2` (and take `O(2**n)` memory as
+well). Instead, directly generate the subsets of both.
+

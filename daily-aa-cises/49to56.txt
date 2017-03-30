@@ -1,0 +1,68 @@
+## `rand7`
+Write a method to generate a random integer `(0...7)`, given a method
+that generates a random integer between `(0...5)`. The resulting rand7
+distribution must be uniform.
+
+## Matchsticks
+You have two sticks and a matchbox. Each stick takes exactly an hour
+to burn from one end to the other.
+
+The sticks are weird, in that they do not burn at a steady. If you
+break a stick in half, it is not guaranteed that each half will take
+30min to burn.
+
+How would you measure exactly 45 minutes by burning these sticks?
+
+## Word Chains
+Given a source word, target word and an English dictionary, transform
+the source word to target by changing/adding/removing 1 character at a
+time, while all intermediate words being valid English words. Return
+the transformation chain which has the smallest number of intermediate
+words.
+
+[See Ned's solution][word-chains-solution]
+
+[word-chains-solution]: https://github.com/appacademy/ruby-curriculum/blob/master/projects/w1d4-word-chains.md
+
+## `print_spiral`
+Given a square matrix in the form of a 2D array-of-arrays, return an
+array consisting of the values of the array in "spiral order" (top row,
+then right hand side, then bottom in reverse, then up, the back
+again...).
+
+## `streaming_sample`
+You know how to use `rand` to randomly sample an element from an
+array.
+
+Now, write a function that, given an input stream of objects, will
+sample a value. The stream has limited length.
+
+* Use only `O(1)` memory.
+* Every value in the stream should have an equal probability of being
+  sampled.
+
+### Solution
+
+## `filterLinkedList`
+Write a double-ended `LinkedList` class in JavaScript.
+
+* You should have a `Link` class
+    * Write `next` and `prev` methods.
+    * You should write a `remove` method.
+    * You should write an `insert` method that inserts an item after
+      the current link.
+* You should have a `LinkedList` class
+    * It should have `first` and `last` methods to return the
+      first/last links in the list.
+    * It should have `push` and `pop` methods.
+
+Given a linked list of integers and an integer value, delete every
+node of the linkedlist containing that value. Use JavaScript.
+
+## `median`
+Given two **sorted** arrays, find the median element amongst the two
+arrays. That is, if both arrays were combined, find the median element
+from the combined array. Assume that there is not enough memory to
+actually combine both arrays. There exists an O(log n + log m)
+solution.
+

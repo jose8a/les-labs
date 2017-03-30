@@ -1,0 +1,16 @@
+## `filterLinkedList`
+Write a double-ended `LinkedList` class in JavaScript.
+
+* You should have a `Link` class
+    * Write `next` and `prev` methods.
+    * You should write a `remove` method.
+    * You should write an `insert` method that inserts an item after
+      the current link.
+* You should have a `LinkedList` class
+    * It should have `first` and `last` methods to return the
+      first/last links in the list.
+    * It should have `push` and `pop` methods.
+
+Given a linked list of integers and an integer value, delete every
+node of the linkedlist containing that value. Use JavaScript.
+

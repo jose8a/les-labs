@@ -1,0 +1,24 @@
+Given an array of integers (positive and negative) find the largest
+contiguous subsum (sum of a subarray).
+
+You can solve this trivially in `O(n**2)` time by considering all
+subarrays. Try to solve it in `O(n)` time with `O(1)` memory.
+
+**Hint**:
+
+Say for an array of `n` elements you know:
+
+* The largest contiguous subsum, AND
+* The largest contiguous subsum **ending at the last of `n`
+  elements**.
+
+Now, say that you extend the `n` elements with an `n+1`th element. How
+does the largest contiguous subsum ending at the `n+1`th element
+change?
+
+How does the largest contiguous subsum change?
+
+Illustration:
+
+
+

@@ -1,0 +1,4 @@
+## `common_substrings`
+Write a function, `common_substrings(str1, str2)` that takes two
+strings and returns the longest common substring.
+

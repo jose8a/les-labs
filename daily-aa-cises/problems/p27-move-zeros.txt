@@ -1,0 +1,4 @@
+## `move_zeros`
+Given an array, move all zeros to the end. The order of non-zero
+elements does not matter. Ex:
+

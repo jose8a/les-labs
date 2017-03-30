@@ -1,0 +1,54 @@
+## `bonus_stack`
+Implement a stack with a  method `max` that returns the maximum
+value of the stack. `max` should run in `O(1)` time.
+
+## `StackQueue`
+Implement a queue using stacks. That is, write `enqueue` and `dequeue`
+using only `push` and `pop` operations.
+
+In terms of performance, `enqueue` should be `O(1)`, but `dequeue` may
+be worst-case `O(n)`. In terms of ammortized time, `dequeue` should be
+`O(1)`. Prove that your solution accomplishes this.
+
+## Windowed Max Range
+Given an array, and a window size `w`, find the maximum `max - min`
+within a range of `w` elements.
+
+For instance:
+
+## `find_missing_number`
+Assume an array of non-negative integers. A second array is formed by
+shuffling the elements of the first array and deleting a random
+element. Given these two arrays, find which element is missing in the
+second array. Do this in linear time with constant memory use.
+
+## `is_shuffle?`
+Given three strings, return whether the third is an **interleaving**
+of the first two. Interleaving means it only contains characters from
+the other two, no more no less, and preserves their character
+ordering. "dabecf" is an interleaving of "abc" and "def". Note that
+the first two strings needn't be in alphabetical order like these.
+
+You may assume that the first two strings do not contain any
+characters in common.
+
+## Bonus: Dynamic Programming FTW
+Our previous `is_shuffle` solution runs in `O(2**n)` time because each
+step might involve 2 solutions of a subproblem of size `n-1`.
+
+That is a terrible time complexity. First, let's change our solution
+to an iterative solution using breadth first search, rather than
+a recursive depth first search.
+
+## `binary`
+Write a function that takes an integer and returns it in binary form.
+
+## Factorial
+Implement factorial with and without recursion. What is a potential
+disadvantage of the recursive way?
+
+What is tail-recursion? Does Ruby have tail-call optimization? Pretend
+it did; write a tail-recursive version of `rec_fac`.
+
+
+

@@ -1,0 +1,6 @@
+## Windowed Max Range
+Given an array, and a window size `w`, find the maximum `max - min`
+within a range of `w` elements.
+
+For instance:
+

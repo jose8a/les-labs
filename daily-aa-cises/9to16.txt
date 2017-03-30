@@ -1,0 +1,56 @@
+## `shuffle`
+You are given an array and a random number generator. Shuffle the
+array.
+
+## `myMap`
+Implement the `Array#map` function in JavaScript.
+
+## Employees Query
+In a SQL db, you have two tables, an employees table and a departments
+table. Employees belong to only one department. Write a SQL query that,
+given a department name, finds all the employees in that department.
+
+## SQL + ActiveRecord
+(from InstaCart) Write the following queries in SQL and in Rails:
+
+* "count all users",
+* "count all active users (you define what active means)",
+* "count all users who visited the site within a certain time period".
+
+## `folding_cipher`
+Implement the Folding Cipher. It folds the alphabet in half and uses
+the adjacent letter. Ie. a <=> z, b <=> y, c <=> x, m <=> n.
+
+## `uniq_subs`
+Write a method that finds all the unique substrings for a word.
+
+A results array and the `include?` method can be used to enforce
+uniqueness, but it adds the time cost of iterating through that array
+to check for inclusion. Keeping track of substrings in a hash is more
+efficient.
+
+## `largest_contiguous_subsum`
+Given an array of integers (positive and negative) find the largest
+contiguous subsum (sum of a subarray).
+
+You can solve this trivially in `O(n**2)` time by considering all
+subarrays. Try to solve it in `O(n)` time with `O(1)` memory.
+
+**Hint**:
+
+Say for an array of `n` elements you know:
+
+* The largest contiguous subsum, AND
+* The largest contiguous subsum **ending at the last of `n`
+  elements**.
+
+Now, say that you extend the `n` elements with an `n+1`th element. How
+does the largest contiguous subsum ending at the `n+1`th element
+change?
+
+How does the largest contiguous subsum change?
+
+Illustration:
+
+
+

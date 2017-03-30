@@ -1,0 +1,8 @@
+## `cyclic?`
+Consider a linked list. Each link in the list holds a `next` reference
+to the next item in the list, except for the final link, which points
+to `nil`.
+
+It is possible to have a "list" without any end, which loops back on
+itself. Possibilities:
+

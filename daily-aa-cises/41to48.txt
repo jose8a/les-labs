@@ -1,0 +1,88 @@
+## `max_unique_psub`
+This is a hard one! Enjoy the challenge!
+
+Let's define a **pseudo-substring**: `psub` is a pseudo-substring of
+`str` if there exists some `[i_0, i_1, ..., i_n]` such that:
+
+* `i_0, ..., i_n` is an **increasing sequence**; `i_l < i_m` for `l < m`.
+* `psub[l] == str[i_l]`
+
+For example:
+
+## `permutations`
+Write a method that takes an array and returns all its
+permutations. Time/memory complexity should be proportional to the
+number of permutations; what is this?
+
+## Truckin'
+Given a fleet of 50 trucks, each with a full fuel tank and a range of
+100 miles, how far can you deliver a payload? You can transfer the
+payload from truck to truck, and you can transfer fuel from truck to
+truck. Assume all the payload will fit in one truck.
+
+### Solution
+
+First, note that we have enough fuel for `50 * 100 == 5,000` truck
+miles. Our problem is that we can't put all the fuel on a single
+truck.
+
+Instead, begin by driving all 50 trucks simultaneously. After two
+miles, we will have burned `50 * 2 = 100` miles worth of fuel. This is
+one trucks worth of fuel. Because we only have 49 trucks worth of fuel
+left, it is unnecessary to drive all 50 trucks any more, because we
+can fit all the fuel in 49 trucks.
+
+Therefore, at the two mile mark, transfer all the fuel from one truck
+to the other trucks. Leave an empty truck at the two mile mark. All
+the other trucks are totally full of fuel.
+
+Next, drive the remaining 49 trucks for `100/49` miles. After `100/49`
+miles, we'll have burned another 100 miles worth of fuel, so we can
+fit all the fuel in the remaining 48 trucks.
+
+Continue like this until there is only one truck left, and it runs out
+of fuel.
+
+Let's calculate how many miles we can drive:
+
+* 50 trucks of fuel: `100/50` miles
+* 49 trucks of fuel: `100/49` miles
+* 48 trucks of fuel: `100/48` miles
+* ...
+* 1 truck of fuel: `100/1` miles
+
+Thus, you can then add up `100/50 + 100/49 + 100/48 + ... + 100/1`. This
+is  ~449.9.
+
+## `cyclic?`
+Consider a linked list. Each link in the list holds a `next` reference
+to the next item in the list, except for the final link, which points
+to `nil`.
+
+It is possible to have a "list" without any end, which loops back on
+itself. Possibilities:
+
+## `next_largest`
+Given a node in a Binary Search Tree, find the node with the next
+largest value. Assume you don't have the root of the tree, just a
+single node from it.
+
+Perform an in-order traversal
+
+## `isBalancedTree`
+Write a JavaScript function to check if a binary tree is balanced. A
+tree is balanced if, at every node, the number of nodes on the left
+hand side is equal to the number of nodes on the right (plus or minus
+one).
+
+## `is_bst?`
+Given a binary tree, write a function to check whether it’s a binary
+search tree or not.
+
+## `findCommonAncestor`
+Find the lowest common ancestor of two nodes in a binary search
+tree. Write the function in JS. Assume I give you both the root and
+the two nodes.
+
+
+

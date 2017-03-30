@@ -1,0 +1,18 @@
+## `is_shuffle?`
+Given three strings, return whether the third is an **interleaving**
+of the first two. Interleaving means it only contains characters from
+the other two, no more no less, and preserves their character
+ordering. "dabecf" is an interleaving of "abc" and "def". Note that
+the first two strings needn't be in alphabetical order like these.
+
+You may assume that the first two strings do not contain any
+characters in common.
+
+## Bonus: Dynamic Programming FTW
+Our previous `is_shuffle` solution runs in `O(2**n)` time because each
+step might involve 2 solutions of a subproblem of size `n-1`.
+
+That is a terrible time complexity. First, let's change our solution
+to an iterative solution using breadth first search, rather than
+a recursive depth first search.
+

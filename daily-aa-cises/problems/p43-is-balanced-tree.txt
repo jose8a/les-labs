@@ -1,0 +1,6 @@
+## `isBalancedTree`
+Write a JavaScript function to check if a binary tree is balanced. A
+tree is balanced if, at every node, the number of nodes on the left
+hand side is equal to the number of nodes on the right (plus or minus
+one).
+

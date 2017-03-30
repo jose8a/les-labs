@@ -1,0 +1,19 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ExtractData	p11.rb	/^def ExtractData (f)$/;"	f
+IterPrime	prime.rb	/^   def self.IterPrime$/;"	F	class:Prime
+MaxDiagRightDownProduct	p11.rb	/^def MaxDiagRightDownProduct(grid)$/;"	f	class:MaxDiagRightUpProduct
+MaxDiagRightUpProduct	p11.rb	/^def MaxDiagRightUpProduct(grid)$/;"	f
+MaxRowHorizontalProduct	p11.rb	/^def MaxRowHorizontalProduct(grid)$/;"	f
+MaxVerticalProduct	p11.rb	/^def MaxVerticalProduct(grid)$/;"	f
+Prime	prime.rb	/^module Prime$/;"	m
+fib	p02.rb	/^def fib (max_range)$/;"	f
+prime_list	p05.rb	/^def prime_list (maxnum)$/;"	f
+smallest_multiple	p05.rb	/^def smallest_multiple (maxnum)$/;"	f
+square_of_sums	p06.rb	/^def square_of_sums(maxnum)$/;"	f
+sum_of_squares	p06.rb	/^def sum_of_squares(maxnum)$/;"	f
+upto	prime.rb	/^   def self.upto(maxnum)$/;"	F	class:Prime

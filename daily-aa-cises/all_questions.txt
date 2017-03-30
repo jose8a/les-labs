@@ -1,0 +1,520 @@
+## `digital_root`
+
+Write a method, `digital_root(num)`. It should sum the digits of a
+positive integer. If it is greater than or equal to 10, sum the digits of the
+resulting number. Keep repeating until there is only one digit in the
+result, called the "digital root". Do not use string conversion within
+your method.
+
+```ruby
+## `caesar_cipher`
+
+Write a function that takes a message and an increment amount and
+outputs the same letters shifted by that amount in the
+alphabet. Assume lowercase and no punctuation. Preserve spaces.
+
+```ruby
+## `common_substrings`
+
+Write a function, `common_substrings(str1, str2)` that takes two
+strings and returns the longest common substring.
+
+```ruby
+## `sum_rec`
+
+Write a function that takes an array of integers and returns their
+sum. Use recursion.
+
+```ruby
+## `fibs`
+
+Write a function, `fibs(num)` which returns the first n elements from
+the fibonnacci sequence, given n.
+
+```ruby
+## `isPalindrome`
+
+Write a JavaScript function that takes a string and returns true if
+it's a palindrome, false if it's not. Use Javascript.
+
+This solution takes less time and memory than rebuilding the string
+backward and comparing the two.
+
+```js
+## `valid_ip?`
+
+Write a method that takes a string as input. It should return true if
+the input is a valid IPv4 address (ie. anything between `0.0.0.0` and
+`255.255.255.255` is valid).
+
+```ruby
+## `sum_from_file`
+
+Write a method that reads in a file of integers, one per line, and
+sums them. Skip the line if it begins with a `"#"`.
+
+```ruby
+## `shuffle`
+
+You are given an array and a random number generator. Shuffle the
+array.
+
+```ruby
+## `myMap`
+
+Implement the `Array#map` function in JavaScript.
+
+```js
+## Employees Query
+
+In a SQL db, you have two tables, an employees table and a departments
+table. Employees belong to only one department. Write a SQL query that,
+given a department name, finds all the employees in that department.
+
+```sql
+## SQL + ActiveRecord
+
+(from InstaCart) Write the following queries in SQL and in Rails:
+
+* "count all users",
+* "count all active users (you define what active means)",
+* "count all users who visited the site within a certain time period".
+
+```
+## `folding_cipher`
+
+Implement the Folding Cipher. It folds the alphabet in half and uses
+the adjacent letter. Ie. a <=> z, b <=> y, c <=> x, m <=> n.
+
+```ruby
+## `uniq_subs`
+
+Write a method that finds all the unique substrings for a word.
+
+A results array and the `include?` method can be used to enforce
+uniqueness, but it adds the time cost of iterating through that array
+to check for inclusion. Keeping track of substrings in a hash is more
+efficient.
+
+```ruby
+## `largest_contiguous_subsum`
+
+Given an array of integers (positive and negative) find the largest
+contiguous subsum (sum of a subarray).
+
+You can solve this trivially in `O(n**2)` time by considering all
+subarrays. Try to solve it in `O(n)` time with `O(1)` memory.
+
+**Hint**:
+
+Say for an array of `n` elements you know:
+
+* The largest contiguous subsum, AND
+* The largest contiguous subsum **ending at the last of `n`
+  elements**.
+
+Now, say that you extend the `n` elements with an `n+1`th element. How
+does the largest contiguous subsum ending at the `n+1`th element
+change?
+
+How does the largest contiguous subsum change?
+
+Illustration:
+
+
+```
+## `silly_years`
+
+Write a function that takes a year (four digit integer) and returns an
+array with the 10 closest subsequent years that meet the following
+condition: the first two digits summed with the last two digits are
+equal to the middle two digits. E.g.,
+
+    1978 => 19 + 78 = 97
+    2307 => 23 + 07 = 30
+
+```ruby
+## `pair_sum`
+
+Given an array of integers, return all pairs that sum up to a
+specified value `k`. List the pairs in `[min, max]` order.
+
+```ruby
+## `matrix_region_sum`
+
+Given a matrix of integers and coordinates of a rectangular region
+within the matrix, find the sum of numbers falling inside the
+rectangle.
+
+```ruby
+## `merge_sort`
+
+Implement merge sort.
+
+```ruby
+## `binary_search`
+
+Implement binary search
+
+```ruby
+## `productify`
+
+Given a list of numbers in an array, replace all the numbers with the
+product of all other numbers. Do this in `O(n)` time **without using
+division**.
+
+```ruby
+## `subsets`
+
+Write a function that takes an array and returns all of its
+subsets. How many sets will it return?
+
+```ruby
+## `longest_palindrome`
+
+Write a function that will take a string and return the indices of the
+start/end of the longest palindrome it contains.
+
+Your palindrome checker could reverse the string and compare it to the
+original, but that takes extra memory (that takes `O(n)` extra
+memory). Instead, you should be able to solve the problem with `O(1)`
+memory.
+
+```ruby
+## `fast_intersection`
+
+Given `arr1` and `arr2`, find the intersection of both sets. It should
+be trivial to write an `O(n**2)` solution. Use sorting to solve in
+`O(nlog(n))`. Next, improve this to `O(n)` time (maybe use a non-array
+datastructure).
+
+```ruby
+## `common_subsets`
+
+Write a function that takes two arrays (`arr1` and `arr2`) of integers
+and returns an array with all the subsets commmon to both.
+
+Don't generate all subsets of `arr1` and `arr2`, which would take time
+exponential in the size of `arr1`/`arr2` (and take `O(2**n)` memory as
+well). Instead, directly generate the subsets of both.
+
+```ruby
+## `can_win`
+
+Given an array and index, find if it's possible to reach 0 by starting
+at the index and repeatedly moving left/right by the distance found at
+`array[index]`.
+
+Hint: Use memoization to record where you've been.
+
+```ruby
+## Non-Comparison Sorts
+
+Part 1: Say that I gave you an array of length `n`, containing the
+numbers `1..n` in jumbled order. "Sort" this array in `O(n)` time. You
+should be able to do this without looking at the input.
+
+Part 2: Say that I give you an array of length `n` with numbers in the
+range `1..N` (`N >= n`). Sort this array in `O(n + N)` time. You may
+use `O(N)` memory.
+
+Part 3: Say I give you an array of `n` strings, each of length `k`. I
+claim that, using merge sort, you can sort this in `O(knlog(n))`,
+since comparing a pair of strings takes `O(k)` time.
+
+I want you to beat that. Sort the strings in `O(kn)`. **Hint**: do not
+compare any two strings. You may assume all strings contain only
+lowercase letters `a..z` without whitespace or punctuation.
+
+```ruby
+## `weighted_random_index`
+
+Given an array, write a function that will return a random index of
+the array. The probability of an index being returned is weighted by
+the value at that index against the sum of the array values. For
+example, for the array `[4, 6, 8]`, index 0 should be returned with 4
+in 18 odds, index 1 should be returned with 6 in 18 odds, and index 2
+should be return with 8 in 18 odds. Implement this in `O(n)` time.
+
+```ruby
+## `move_zeros`
+
+Given an array, move all zeros to the end. The order of non-zero
+elements does not matter. Ex:
+
+```
+## `look_and_say`
+
+Implement the 'look and say' function. 'Look and say' takes an input
+array and outputs an array that describes the count of the elements in
+the input array as they appear in order.
+
+**Example:**
+
+```ruby
+## Sums Upon Sums
+
+I give you a scrambled list of `n` unique integers between 0
+and `n`. Tell me what number is missing?
+
+If I let you use `O(nlog(n))` time, what is a naive way of doing this?
+
+Next, what if I require that you solve the problem in `O(n)` time?
+What datastructure might you use?
+
+Finally, how could you solve the problem in `O(n)`, and also `O(1)`
+space?
+
+```
+## `bonus_stack`
+
+Implement a stack with a  method `max` that returns the maximum
+value of the stack. `max` should run in `O(1)` time.
+
+```ruby
+## `StackQueue`
+
+Implement a queue using stacks. That is, write `enqueue` and `dequeue`
+using only `push` and `pop` operations.
+
+In terms of performance, `enqueue` should be `O(1)`, but `dequeue` may
+be worst-case `O(n)`. In terms of ammortized time, `dequeue` should be
+`O(1)`. Prove that your solution accomplishes this.
+
+```ruby
+## Windowed Max Range
+
+Given an array, and a window size `w`, find the maximum `max - min`
+within a range of `w` elements.
+
+For instance:
+
+```ruby
+## `find_missing_number`
+
+Assume an array of non-negative integers. A second array is formed by
+shuffling the elements of the first array and deleting a random
+element. Given these two arrays, find which element is missing in the
+second array. Do this in linear time with constant memory use.
+
+```ruby
+## `is_shuffle?`
+
+Given three strings, return whether the third is an **interleaving**
+of the first two. Interleaving means it only contains characters from
+the other two, no more no less, and preserves their character
+ordering. "dabecf" is an interleaving of "abc" and "def". Note that
+the first two strings needn't be in alphabetical order like these.
+
+You may assume that the first two strings do not contain any
+characters in common.
+
+```ruby
+## Bonus: Dynamic Programming FTW
+
+Our previous `is_shuffle` solution runs in `O(2**n)` time because each
+step might involve 2 solutions of a subproblem of size `n-1`.
+
+That is a terrible time complexity. First, let's change our solution
+to an iterative solution using breadth first search, rather than
+a recursive depth first search.
+
+```ruby
+## `binary`
+
+Write a function that takes an integer and returns it in binary form.
+
+```ruby
+## Factorial
+
+Implement factorial with and without recursion. What is a potential
+disadvantage of the recursive way?
+
+What is tail-recursion? Does Ruby have tail-call optimization? Pretend
+it did; write a tail-recursive version of `rec_fac`.
+
+```ruby
+## `max_unique_psub`
+
+This is a hard one! Enjoy the challenge!
+
+Let's define a **pseudo-substring**: `psub` is a pseudo-substring of
+`str` if there exists some `[i_0, i_1, ..., i_n]` such that:
+
+* `i_0, ..., i_n` is an **increasing sequence**; `i_l < i_m` for `l < m`.
+* `psub[l] == str[i_l]`
+
+For example:
+
+```
+## Solution
+
+```ruby
+## `permutations`
+
+Write a method that takes an array and returns all its
+permutations. Time/memory complexity should be proportional to the
+number of permutations; what is this?
+
+```ruby
+## Truckin'
+
+Given a fleet of 50 trucks, each with a full fuel tank and a range of
+100 miles, how far can you deliver a payload? You can transfer the
+payload from truck to truck, and you can transfer fuel from truck to
+truck. Assume all the payload will fit in one truck.
+
+### Solution
+
+First, note that we have enough fuel for `50 * 100 == 5,000` truck
+miles. Our problem is that we can't put all the fuel on a single
+truck.
+
+Instead, begin by driving all 50 trucks simultaneously. After two
+miles, we will have burned `50 * 2 = 100` miles worth of fuel. This is
+one trucks worth of fuel. Because we only have 49 trucks worth of fuel
+left, it is unnecessary to drive all 50 trucks any more, because we
+can fit all the fuel in 49 trucks.
+
+Therefore, at the two mile mark, transfer all the fuel from one truck
+to the other trucks. Leave an empty truck at the two mile mark. All
+the other trucks are totally full of fuel.
+
+Next, drive the remaining 49 trucks for `100/49` miles. After `100/49`
+miles, we'll have burned another 100 miles worth of fuel, so we can
+fit all the fuel in the remaining 48 trucks.
+
+Continue like this until there is only one truck left, and it runs out
+of fuel.
+
+Let's calculate how many miles we can drive:
+
+* 50 trucks of fuel: `100/50` miles
+* 49 trucks of fuel: `100/49` miles
+* 48 trucks of fuel: `100/48` miles
+* ...
+* 1 truck of fuel: `100/1` miles
+
+Thus, you can then add up `100/50 + 100/49 + 100/48 + ... + 100/1`. This
+is  ~449.9.
+```
+## `cyclic?`
+
+Consider a linked list. Each link in the list holds a `next` reference
+to the next item in the list, except for the final link, which points
+to `nil`.
+
+It is possible to have a "list" without any end, which loops back on
+itself. Possibilities:
+
+```
+## `next_largest`
+
+Given a node in a Binary Search Tree, find the node with the next
+largest value. Assume you don't have the root of the tree, just a
+single node from it.
+
+Perform an in-order traversal
+
+```ruby
+## `isBalancedTree`
+
+Write a JavaScript function to check if a binary tree is balanced. A
+tree is balanced if, at every node, the number of nodes on the left
+hand side is equal to the number of nodes on the right (plus or minus
+one).
+
+```js
+## `is_bst?`
+
+Given a binary tree, write a function to check whether it’s a binary
+search tree or not.
+
+```ruby
+## `findCommonAncestor`
+
+Find the lowest common ancestor of two nodes in a binary search
+tree. Write the function in JS. Assume I give you both the root and
+the two nodes.
+
+```js
+## `rand7`
+
+Write a method to generate a random integer `(0...7)`, given a method
+that generates a random integer between `(0...5)`. The resulting rand7
+distribution must be uniform.
+
+```ruby
+## Matchsticks
+
+You have two sticks and a matchbox. Each stick takes exactly an hour
+to burn from one end to the other.
+
+The sticks are weird, in that they do not burn at a steady. If you
+break a stick in half, it is not guaranteed that each half will take
+30min to burn.
+
+How would you measure exactly 45 minutes by burning these sticks?
+
+```
+## Word Chains
+
+Given a source word, target word and an English dictionary, transform
+the source word to target by changing/adding/removing 1 character at a
+time, while all intermediate words being valid English words. Return
+the transformation chain which has the smallest number of intermediate
+words.
+
+[See Ned's solution][word-chains-solution]
+
+[word-chains-solution]: https://github.com/appacademy/ruby-curriculum/blob/master/projects/w1d4-word-chains.md
+## `print_spiral`
+
+Given a square matrix in the form of a 2D array-of-arrays, return an
+array consisting of the values of the array in "spiral order" (top row,
+then right hand side, then bottom in reverse, then up, the back
+again...).
+
+```ruby
+## `streaming_sample`
+
+You know how to use `rand` to randomly sample an element from an
+array.
+
+Now, write a function that, given an input stream of objects, will
+sample a value. The stream has limited length.
+
+* Use only `O(1)` memory.
+* Every value in the stream should have an equal probability of being
+  sampled.
+
+### Solution
+
+```
+## `filterLinkedList`
+
+Write a double-ended `LinkedList` class in JavaScript.
+
+* You should have a `Link` class
+    * Write `next` and `prev` methods.
+    * You should write a `remove` method.
+    * You should write an `insert` method that inserts an item after
+      the current link.
+* You should have a `LinkedList` class
+    * It should have `first` and `last` methods to return the
+      first/last links in the list.
+    * It should have `push` and `pop` methods.
+
+Given a linked list of integers and an integer value, delete every
+node of the linkedlist containing that value. Use JavaScript.
+
+```js
+## `median`
+
+Given two **sorted** arrays, find the median element amongst the two
+arrays. That is, if both arrays were combined, find the median element
+from the combined array. Assume that there is not enough memory to
+actually combine both arrays. There exists an O(log n + log m)
+solution.
+
+```

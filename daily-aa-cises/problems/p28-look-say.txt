@@ -1,0 +1,7 @@
+## `look_and_say`
+Implement the 'look and say' function. 'Look and say' takes an input
+array and outputs an array that describes the count of the elements in
+the input array as they appear in order.
+
+**Example:**
+
